@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Random gradient generator</h1>
+    <div class="container">
+        <h1 id="color">#ff2638</h1>
+        <button id="generator">generate</button>
+    </div>
+
+    <!-- <script>
+        const btn = document.getElementById('generator');
+        const text = document.getElementById('color');
+
+        const generate = function () {
+            newColor = "#" + (Math.floor((Math.random() * 0xFFFFFF))).toString(16);
+            console.log(newColor);
+            if (newColor.length < 7) {
+                generate();
+            }
+        }
+
+        btn.addEventListener("click", (e) => {
+            generate();
+
+            document.body.style.background = newColor;
+            btn.style.color = newColor;
+            text.innerText = newColor;
+        });
+    </script> -->
+</body>
+
+</html>
